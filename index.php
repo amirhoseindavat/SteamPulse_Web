@@ -1,6 +1,6 @@
 <?php
 try {
-    //USD
+//USD
 $USDjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=1&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
 $USDobj = json_decode($USDjson);
 $USD = preg_replace("/[^0-9\.]/", '', $USDobj->lowest_price); 
@@ -28,6 +28,11 @@ $IN = preg_replace("/[^0-9\.]/", '', $INobj->lowest_price);
 $BRjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=7&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
 $BRobj = json_decode($BRjson);
 $BR = preg_replace("/[^0-9\.]/", '', $BRobj->lowest_price)/100; 
+// KZ
+$KZjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=37&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
+$KZobj = json_decode($KZjson);
+$KZ = preg_replace("/[^0-9\.]/", '', $KZobj->lowest_price)/100; 
+
 } catch (Exception $e) {
     echo "<script type='text/javascript'>alert('$e->getMessage()');</script>";
 }
@@ -147,6 +152,12 @@ var x = setInterval(function() {
 				<td><?php echo 'R$ '.number_format((float)$BR/1.15, 2, '.', '')?></td>				
 				<td><?php echo 'R$ '.number_format((float)($BR-$BR/1.15), 2, '.', '')?></td>
 			</tr>
+			<tr>
+				<td class="regions">🇰🇿 قزاقستان</td>
+				<td><?php echo number_format((float)$KZ, 2, '.', '').'₸'?></td>
+				<td><?php echo number_format((float)$KZ/1.15, 2, '.', '').'₸'?></td>				
+				<td><?php echo number_format((float)($KZ-$KZ/1.15), 2, '.', '').'₸'?></td>
+			</tr>
 		</tbody>
 	</table>
 	
@@ -156,7 +167,7 @@ var x = setInterval(function() {
     
     
 </div>
-<p class="copyright">v1.0 - ساخته شده با ❤️
+<p class="copyright">v1.1 - ساخته شده با ❤️
  توسط
   <img class="logo" src="https://gaming-club.ir/wp-content/uploads/2019/07/cropped-icon-32x32.png" width="20" height="20"> <a href="https://gaming-club.ir/">گیمینگ کلاب </a>
  x 
