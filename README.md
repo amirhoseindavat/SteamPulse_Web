@@ -21,6 +21,7 @@ SteamPulse web is a clone of the original SteamPulse for users of `Mac`, `Linux`
 
 * [PHP](https://www.php.net/)
 * [HTML - CSS - LESS]
+* [country-flag-emoji-polyfill](https://github.com/talkjs/country-flag-emoji-polyfill)
 * [Steam Web API](https://partner.steamgames.com/doc/webapi_overview)
 
 ## License
