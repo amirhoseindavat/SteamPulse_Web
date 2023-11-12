@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Twemoji Country Flags";
+  unicode-range: U+1F1E6-1F1FF, U+1F3F4, U+E0062-E0063, U+E0065, U+E0067,
+    U+E006C, U+E006E, U+E0073-E0074, U+E0077, U+E007F;
+  src: url('https://cdn.jsdelivr.net/npm/country-flag-emoji-polyfill@0.1/dist/TwemojiCountryFlags.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: "iransans";
+  src: url("https://amirhoseindavat.ir/fonts/IRANSansWeb.eot"), url("https://amirhoseindavat.ir/fonts/IRANSansWeb.ttf") format("truetype"), url("https://amirhoseindavat.ir/fonts/IRANSansWeb.woff") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  font-family: iransans, sans-serif;
+}
+body {
+  margin: 0;
+  background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-weight: 100;  
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #fff;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -55%);
+          transform: translate(-50%, -55%);
+		  //height: -webkit-fill-available;
+}
+@media (pointer: coarse)  {
+	/* mobile device */
+	.container {
+		position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -55%);
+          transform: translate(-50%, -55%);
+		  height: -webkit-fill-available;
+		  max-width: 97%;
+	}
+	.copyright{
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #666;
+    margin: 0;
+    padding: 10px;
+    z-index: 999;
+    text-align: center;
+    color: #eee;
+    backdrop-filter: blur(4px);
+    z-index: 998;
+    background: #00000082;
+    padding: 15px !important;
+    direction: rtl;
+	font-size: 15px;
+}
+
+}
+/*@media (max-resolution: 1dppx) {
+    .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -55%);
+          transform: translate(-50%, -55%);
+}*/
+table {
+  overflow-x:auto;
+  text-align: center;
+  direction: rtl;
+  margin-bottom: 0;
+}
+.table-responsive{
+	height: 100%;
+
+	overflow: auto;
+}
+th,
+td {
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+th {
+  text-align: left;
+}
+thead th {
+  background-color: #55608f;
+  text-align: center;
+}
+/*tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}*/
+tbody td {
+  position: relative;
+  direction: ltr !important;
+}
+/*tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}*/
+.copyright{
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #666;
+    margin: 0;
+    padding: 10px;
+    z-index: 999;
+    text-align: center;
+    color: #eee;
+    backdrop-filter: blur(4px);
+    z-index: 998;
+    background: #00000082;
+    padding: 15px !important;
+    direction: rtl;
+}
+.hide{
+  display: none;
+}
+.tf2{
+	width: 40px;
+    margin-left: 10px;
+    //margin-top: -2px;
+    //bottom: -12px;
+    position: relative;
+	direction: rtl;
+	vertical-align:middle;
+
+}
+.title	{
+	direction: rtl;
+	text-align: -webkit-center;
+	margin-bottom: 50;
+}
+.update
+{
+	float: left;margin-top: 10px;background-color: transparent;color: #FFFFFF;border: 3px solid #FFFFFF;padding: 5px 15px 5px 15px;border-radius: 20px;
+	 font-family: iransans;
+}
+.logo
+{
+	vertical-align:middle;
+	position: static;
+}
+.regions{
+  font-family: "Twemoji Country Flags",iransans;
+  direction: rtl !important;
+}

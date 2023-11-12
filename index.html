@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html >
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="module" defer="">
+		import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
+		polyfillCountryFlagEmojis();
+		</script>
+  <meta charset="UTF-8">
+  <title>SteamPulse</title>
+      <link rel="stylesheet" href="css/style.css">
+	  <link rel="icon" type="image/png" href="https://codemage.ir/img/favicon.png"/> 
+ 
+</head>
+<script>
+	window.onload = function() {
+		$("#frame").html("").load(url);
+  var element = document.getElementById("loader");
+  element.classList.add("hide");
+};
+$(function() {
+
+$.ajaxSetup({
+  cache: false
+});
+var url = "http://127.0.0.1/steampulse/data.php";
+
+$("#button").click(function() {
+  $("#frame").html("").load(url);
+  var element = document.getElementById("loader");
+  element.classList.add("hide");
+
+});
+
+});
+
+var countDownDate = new Date().getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+    
+  var distance = now - countDownDate;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  var outputstrings ="s";
+  if(days >=1)
+  {
+  outputstrings = "Updated "+days + "d " + hours + "h "+ minutes + "m " + seconds + "s ago";
+  }
+  else if(hours >=1)
+  {
+  outputstrings = "Updated "+ hours + "h "+ minutes + "m " + seconds + "s ago";
+  }
+  else if(minutes >=1)
+  {
+  outputstrings = "Updated "+ minutes + "m " + seconds + "s ago";
+  }
+  else
+  {
+  outputstrings = "Updated "+ seconds + "s ago";
+  }
+  
+  //document.getElementById("demo").innerHTML = days + "d " + hours + "h "+ minutes + "m " + seconds + "s ";
+    document.getElementById("demo").innerHTML = outputstrings;
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<body>
+  <div class="container" id="frame">  
+    <img class="loading" id="loader" src="steam_spinner.png">
+
+
+
+</div>
+<p class="copyright">ساخته شده با ❤️ توسط گیمینگ کلاب x آرِس گیم</p> 
+  
+</body>
+</html>
+
