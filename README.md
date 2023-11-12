@@ -13,7 +13,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://CodeMage.ir)
 
-SteamPulse web is a clone of the original SteamPulse for users of `Mac`, `Linux`, `Android`.
+SteamPulse web is a clone of the original [SteamPulse](https://github.com/amirhoseindavat/SteamPulse) for users of `Mac`, `Linux`, `Android`.
 
 <!--<p align="right">(<a href="#top">back to top</a>)</p>-->
 
