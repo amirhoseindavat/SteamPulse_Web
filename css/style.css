@@ -11,6 +11,12 @@
   font-weight: normal;
   font-style: normal;
 }
+br{
+	padding-bottom: 10px;
+    content: "A" !important;
+    display: block !important;
+    margin-bottom: 0.3em !important;
+}
 
 html,
 body {
@@ -52,7 +58,7 @@ a:active {
   left: 50%;
   -webkit-transform: translate(-50%, -55%);
           transform: translate(-50%, -55%);
-		  //height: -webkit-fill-available;
+		  height: -webkit-fill-available;
 }
 @media (pointer: coarse)  {
 	/* mobile device */
@@ -157,8 +163,6 @@ tbody td {
 .tf2{
 	width: 40px;
     margin-left: 10px;
-    //margin-top: -2px;
-    //bottom: -12px;
     position: relative;
 	direction: rtl;
 	vertical-align:middle;
