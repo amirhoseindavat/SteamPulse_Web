@@ -4,16 +4,14 @@ try {
 $USDjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=1&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
 $USDobj = json_decode($USDjson);
 $USD = preg_replace("/[^0-9\.]/", '', $USDobj->lowest_price); 
-/*
 // Argentina
-$ARGjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=1&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
+$ARGjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=34&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
 $ARGobj = json_decode($ARGjson);
-$ARG = preg_replace("/[^0-9\.]/", '', $ARGobj->lowest_price); 
+$ARG = preg_replace("/[^0-9\.]/", '', $ARGobj->lowest_price)/100; 
 // TR
-$TRjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=1&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
+$TRjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=17&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
 $TRobj = json_decode($TRjson);
-$TR = preg_replace("/[^0-9\.]/", '', $TRobj->lowest_price); 
-*/
+$TR = preg_replace("/[^0-9\.]/", '', $TRobj->lowest_price)/100; 
 // UA
 $UAjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=18&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
 $UAobj = json_decode($UAjson);
@@ -113,23 +111,23 @@ var x = setInterval(function() {
 		</thead>
 		<tbody>
 			<tr>
-				<td class="regions">🇺🇸 آمریکا<br> 🇦🇷 آرژاتین <br> 🇹🇷 ترکیه </td>
+				<td class="regions">🇺🇸 آمریکا</td>
 				<td><?php echo $USDobj->lowest_price;?></td>
 				<td><?php echo '$'.number_format((float)$USD/1.15, 2, '.', '')?></td>				
 				<td><?php echo '$'.number_format((float)($USD-$USD/1.15), 2, '.', '')?></td>
 			</tr>
-            <!--<tr>
+            <tr>
 				<td class="regions">🇦🇷 آرژاتین</td>
 				<td><?php echo $ARGobj->lowest_price;?></td>
-				<td><?php echo '$'.number_format((float)$ARG/1.15, 2, '.', '')?></td>				
-				<td><?php echo '$'.number_format((float)($ARG-$ARG/1.15), 2, '.', '')?></td>
+				<td><?php echo 'ARS$ '.number_format((float)$ARG/1.15, 2, '.', '')?></td>				
+				<td><?php echo 'ARS$ '.number_format((float)($ARG-$ARG/1.15), 2, '.', '')?></td>
 			</tr>
             <tr>
 				<td class="regions">🇹🇷 ترکیه</td>
 				<td><?php echo $TRobj->lowest_price;?></td>
-				<td><?php echo '$'.number_format((float)$TR/1.15, 2, '.', '')?></td>				
-				<td><?php echo '$'.number_format((float)($TR-$TR/1.15), 2, '.', '')?></td>
-			</tr>-->
+				<td><?php echo number_format((float)$TR/1.15, 2, '.', '').' TL'?></td>				
+				<td><?php echo number_format((float)($TR-$TR/1.15), 2, '.', '').' TL'?></td>
+			</tr>
             <tr>
 				<td class="regions">🇺🇦 اوکراین</td>
 				<td><?php echo $UAobj->lowest_price;?></td>
@@ -169,7 +167,7 @@ var x = setInterval(function() {
     
     
 </div>
-<p class="copyright">v1.1.1 - ساخته شده با ❤️
+<p class="copyright">v1.1 - ساخته شده با ❤️
  توسط
   <img class="logo" src="https://gaming-club.ir/wp-content/uploads/2019/07/cropped-icon-32x32.png" width="20" height="20"> <a href="https://gaming-club.ir/">گیمینگ کلاب </a>
  x 
