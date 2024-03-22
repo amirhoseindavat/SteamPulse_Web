@@ -163,20 +163,38 @@ tbody td {
 .tf2{
 	width: 40px;
     margin-left: 10px;
-    position: relative;
+    margin-top: -2px;
+    bottom: -12px;
+    position: static;
 	direction: rtl;
 	vertical-align:middle;
 
 }
 .title	{
 	direction: rtl;
-	text-align: -webkit-center;
+	text-align: right;
 	margin-bottom: 50;
 }
 .update
 {
-	float: left;margin-top: 10px;background-color: transparent;color: #FFFFFF;border: 3px solid #FFFFFF;padding: 5px 15px 5px 15px;border-radius: 20px;
-	 font-family: iransans;
+	float: left;
+	margin-top: 10px;
+	background-color: transparent;
+	color: #FFFFFF;
+	border: 3px solid #FFFFFF;
+	padding: 5px 15px 5px 15px;
+	border-radius: 20px;
+	font-family: iransans;
+}
+.link
+{
+	background-color: transparent;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius: 125px;
+    padding: 5px 15px 5px 15px;
+    float: left;
+    font-size: 15px;
 }
 .logo
 {

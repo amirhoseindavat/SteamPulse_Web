@@ -1,37 +1,37 @@
 <?php
 try {
 //USD
-$USDjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=1&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
+$USDjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=1&market_hash_name=Tour%20of%20Duty%20Ticket');
 $USDobj = json_decode($USDjson);
 $USD = preg_replace("/[^0-9\.]/", '', $USDobj->lowest_price); 
 /*
 // Argentina
-$ARGjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=1&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
+$ARGjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=1&market_hash_name=Tour%20of%20Duty%20Ticket');
 $ARGobj = json_decode($ARGjson);
 $ARG = preg_replace("/[^0-9\.]/", '', $ARGobj->lowest_price); 
 // TR
-$TRjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=1&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
+$TRjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=1&market_hash_name=Tour%20of%20Duty%20Ticket');
 $TRobj = json_decode($TRjson);
 $TR = preg_replace("/[^0-9\.]/", '', $TRobj->lowest_price); 
 */
 // UA
-$UAjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=18&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
+$UAjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=18&market_hash_name=Tour%20of%20Duty%20Ticket');
 $UAobj = json_decode($UAjson);
 $UA = preg_replace("/[^0-9\.]/", '', $UAobj->lowest_price)/100; 
 // RU
-$RUjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=5&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
+$RUjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=5&market_hash_name=Tour%20of%20Duty%20Ticket');
 $RUobj = json_decode($RUjson);
 $RU = preg_replace("/[^0-9\.]/", '', $RUobj->lowest_price)/100; 
 // IN
-$INjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=24&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
+$INjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=24&market_hash_name=Tour%20of%20Duty%20Ticket');
 $INobj = json_decode($INjson);
 $IN = preg_replace("/[^0-9\.]/", '', $INobj->lowest_price); 
 // BR
-$BRjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=7&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
+$BRjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=7&market_hash_name=Tour%20of%20Duty%20Ticket');
 $BRobj = json_decode($BRjson);
 $BR = preg_replace("/[^0-9\.]/", '', $BRobj->lowest_price)/100; 
 // KZ
-$KZjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=37&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
+$KZjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=37&market_hash_name=Tour%20of%20Duty%20Ticket');
 $KZobj = json_decode($KZjson);
 $KZ = preg_replace("/[^0-9\.]/", '', $KZobj->lowest_price)/100; 
 
@@ -51,8 +51,8 @@ $KZ = preg_replace("/[^0-9\.]/", '', $KZobj->lowest_price)/100;
 		</script>
   <meta charset="UTF-8">
   <title>SteamPulse</title>
-      <link rel="stylesheet" href="css/style.css">
-	  <link rel="icon" type="image/png" href="favicon.png"/> 
+      <link rel="stylesheet" href="/css/style.css">
+	  <link rel="icon" type="image/png" href="/favicon.png"/> 
  
 </head>
 <script>
@@ -99,9 +99,9 @@ var x = setInterval(function() {
 
 <body>
   <div class="container" id="frame">
-  <h4 class="title"><img class="tf2" src="key.png">
-  قیمت کلید TF2 در ریجن های مختلف
-  <a href="https://steampulse.ir/ticket" class="link">قیمت تیکت</a>
+  <h4 class="title"><img class="tf2" src="ticket.png">
+  قیمت تیکت TF2 در ریجن های مختلف
+  <a href="https://steampulse.ir" class="link">قیمت کلید</a>
   </h4>
 	<div class="table-responsive">
 
