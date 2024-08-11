@@ -116,7 +116,7 @@ var x = setInterval(function() {
 		</thead>
 		<tbody>
 			<tr>
-				<td class="regions">🇺🇸 آمریکا<br> 🇦🇷 آرژاتین <br> 🇹🇷 ترکیه </td>
+				<td class="regions">🇺🇸 آمریکا<br> 🇦🇷 آرژانتین <br> 🇹🇷 ترکیه </td>
 				<td><?php echo $USDobj->lowest_price;?></td>
 				<td><?php echo '$'.number_format((float)$USD/1.15, 2, '.', '')?></td>				
 				<td><?php echo '$'.number_format((float)($USD-$USD/1.15), 2, '.', '')?></td>
@@ -172,7 +172,7 @@ var x = setInterval(function() {
     
     
 </div>
-<p class="copyright">v1.2 - ساخته شده با ❤️
+<p class="copyright">v1.2.1 - ساخته شده با ❤️
  توسط
   <img class="logo" src="https://gaming-club.ir/wp-content/uploads/2019/07/cropped-icon-32x32.png" width="20" height="20"> <a href="https://gaming-club.ir/">گیمینگ کلاب </a>
  x 
