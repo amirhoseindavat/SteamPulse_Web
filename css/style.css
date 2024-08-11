@@ -1,15 +1,10 @@
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
 @font-face {
   font-family: "Twemoji Country Flags";
   unicode-range: U+1F1E6-1F1FF, U+1F3F4, U+E0062-E0063, U+E0065, U+E0067,
     U+E006C, U+E006E, U+E0073-E0074, U+E0077, U+E007F;
   src: url('https://cdn.jsdelivr.net/npm/country-flag-emoji-polyfill@0.1/dist/TwemojiCountryFlags.woff2') format('woff2');
   font-display: swap;
-}
-@font-face {
-  font-family: "iransans";
-  src: url("https://amirhoseindavat.ir/fonts/IRANSansWeb.eot"), url("https://amirhoseindavat.ir/fonts/IRANSansWeb.ttf") format("truetype"), url("https://amirhoseindavat.ir/fonts/IRANSansWeb.woff") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 br{
 	padding-bottom: 10px;
@@ -23,7 +18,7 @@ body {
   height: 100%;
   font-size: 1.1rem;
   color: #FFFFFF;
-  font-family: iransans, sans-serif;
+  font-family: Vazirmatn, sans-serif;
 }
 body {
   margin: 0;
@@ -184,7 +179,7 @@ tbody td {
 	border: 3px solid #FFFFFF;
 	padding: 5px 15px 5px 15px;
 	border-radius: 20px;
-	font-family: iransans;
+	font-family: Vazirmatn;
 }
 .link
 {
@@ -202,6 +197,6 @@ tbody td {
 	position: static;
 }
 .regions{
-  font-family: "Twemoji Country Flags",iransans;
+  font-family: "Twemoji Country Flags",Vazirmatn;
   direction: rtl !important;
 }
